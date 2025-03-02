@@ -1,3 +1,37 @@
+# Rename
+To ensure the code can run properly without modifying the repository code, I've written a script to change the names of poses and images. Before running the visualization code, execute the `rename.py` script. This script will rename the image files to `00x.png` and the pose files to `00x.txt`. 
+
+```
+inputs
+├── obj
+    ├── images
+        ├── pic_name_1.png
+        ├── pic_name_2.png
+        ├── pic_name_3.png
+    ├── poses
+        ├── pose1.txt
+        ├── pose2.txt
+        ├── pose3.txt
+```
+
+
+```
+python rename.py -d /path/to/inputs/obj/
+```
+Change to
+```
+inputs
+├── obj
+    ├── images
+        ├── 001.png
+        ├── 002.png
+        ├── 003.png
+    ├── poses
+        ├── 001.txt
+        ├── 002.txt
+        ├── 003.txt
+```
+
 # CameraViewer: A lightweight tool for camera pose visualization
 Visualize camera poses in seconds! 
 A python tool that helps plot cameras for 3D computer vision research.
