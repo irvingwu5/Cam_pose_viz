@@ -90,7 +90,7 @@ python app.py --root inputs/quick/cam_w2c/ --type w2c --image_size 128
 ```
 <img src="./docs/692db.png" width=300px/>
 
-To read point cloud from specified folder, run the command with ```--type ply_path```
+To read point cloud from specified folder, run the command with ```--ply_path```
 Pay attention to debugging the code and observing the translation vector part of the camera extrinsic matrix to determine the appropriate rescale factor. The world coordinate system is measured in meters, so adjust the rescale factor to ensure that the poses and point cloud remain within the visible range of the world coordinate system.
 
 ```
