@@ -128,7 +128,7 @@ To read point cloud from specified folder, run the command with ```--ply_path```
 Pay attention to debugging the code and observing the translation vector part of the camera extrinsic matrix to determine the appropriate rescale factor. The world coordinate system is measured in meters, so adjust the rescale factor to ensure that the poses and point cloud remain within the visible range of the world coordinate system.
 
 ```
-python app.py --root inputs/quick/schoolbag/ --type w2c --ply_path ./inputs/quick/schoolbag/pointcloud.ply --rescale 0.01  --scene_size 5
+python app.py --root inputs/quick/schoolbag/ --type w2c --ply_path inputs/quick/schoolbag/pointcloud.ply --rescale 0.01  --scene_size 5
 ```
 <img src="./docs/ply_viz.png" width=300px/>
 
